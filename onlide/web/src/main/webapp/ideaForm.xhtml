@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/layouts/default.xhtml">
+    <ui:define name="title">#{text['createIdea.title']}</ui:define>
+    <ui:define name="menu">AdminMenu</ui:define>
+
+    <ui:define name="body">
+        <div class="span3">
+            <h2><h:outputText value="#{text['createIdea.heading']}"/></h2>
+
+            <p><h:outputText value="#{text['createIdea.message']}"/></p>
+        </div>
+        <div class="span7">
+            <h:form id="uploadForm" styleClass="well form-horizontal">
+
+                <div class="control-group">
+                    <h:outputLabel styleClass="control-label" for="title" value="#{text['createIdeaForm.title']}"/>
+
+                    <div class="controls">
+                        <p:inputText value="#{ideaForm.title}QQQQ" id="title" required="true"/>
+                        <p:message for="title"/>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h:outputLabel styleClass="control-label" for="category" value="#{text['createIdeaForm.category']}"/>
+
+                    <div class="controls">
+						 <p:selectOneMenu value="">  
+				            <f:selectItem itemLabel="Select One" itemValue="" />  
+				            <f:selectItem itemLabel="Option 1" itemValue="1" />  
+				            <f:selectItem itemLabel="Option 2" itemValue="2" />  
+				            <f:selectItem itemLabel="Option 3" itemValue="3" />  
+			        	</p:selectOneMenu>                          
+                        
+                        
+                        <p:message for="title"/>
+                    </div>
+                </div>
+
+
+                <div class="control-group">
+                    <h:outputLabel styleClass="control-label" for="description" value="#{text['createIdeaForm.description']}"/>
+					<div class="controls">
+                        <h:inputTextarea value="#{ideaForm.description}" id="description" required="true"/>
+                        <p:message for="description"/>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <h:commandButton value="#{text['button.add']}" action="#{ideaForm.save}"
+                                     id="upload" styleClass="btn btn-primary" />
+                    <h:commandButton value="#{text['button.cancel']}" action="home" immediate="true"
+                                     id="cancel" styleClass="btn" onclick="bCancel=true"/>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>

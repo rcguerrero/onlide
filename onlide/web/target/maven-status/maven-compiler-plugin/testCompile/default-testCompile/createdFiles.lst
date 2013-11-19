@@ -1,0 +1,8 @@
+es/upm/muss/agile/webapp/action/PasswordHintTest.class
+es/upm/muss/agile/webapp/action/BasePageTestCase.class
+es/upm/muss/agile/webapp/filter/LocaleFilterTest.class
+es/upm/muss/agile/webapp/listener/StartupListenerTest.class
+es/upm/muss/agile/webapp/action/UserListTest.class
+es/upm/muss/agile/webapp/filter/MockFilterChain.class
+es/upm/muss/agile/webapp/action/UserFormTest.class
+es/upm/muss/agile/webapp/action/SignupFormTest.class

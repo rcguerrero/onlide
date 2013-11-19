@@ -1,0 +1,8 @@
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/action/SignupFormTest.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/action/PasswordHintTest.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/filter/LocaleFilterTest.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/action/UserListTest.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/action/UserFormTest.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/listener/StartupListenerTest.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/filter/MockFilterChain.java
+/workTecno/projects/eclipse/agileWS/onlide/web/src/test/java/es/upm/muss/agile/webapp/action/BasePageTestCase.java
