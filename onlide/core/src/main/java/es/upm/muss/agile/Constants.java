@@ -2,6 +2,7 @@ package es.upm.muss.agile;
 
 
 /**
+ * ONLIDE
  * Constant values used throughout the application.
  *
  * @author <a href="mailto:matt@raibledesigns.com">Matt Raible</a>
