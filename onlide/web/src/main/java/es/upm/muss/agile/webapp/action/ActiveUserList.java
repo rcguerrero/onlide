@@ -1,5 +1,7 @@
 package es.upm.muss.agile.webapp.action;
-
+/**
+ * @author nanobeto@hotmail.com
+ */
 import es.upm.muss.agile.model.User;
 import es.upm.muss.agile.webapp.listener.UserCounterListener;
 
