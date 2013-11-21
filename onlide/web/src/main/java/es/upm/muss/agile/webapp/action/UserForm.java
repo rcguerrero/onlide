@@ -113,7 +113,6 @@ public class UserForm extends BasePage implements Serializable {
     }
 
     public String save() throws IOException {
-        System.out.println("GRABANDO USUARIO!!!!!!!");
     	// workaround for plain ol' HTML input tags that don't seem to set
         // properties on the managed bean
         setUserRoles(getRequest().getParameterValues("userForm:userRoles"));

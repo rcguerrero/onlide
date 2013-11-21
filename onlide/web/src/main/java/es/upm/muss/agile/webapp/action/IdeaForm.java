@@ -1,12 +1,16 @@
 package es.upm.muss.agile.webapp.action;
 
 import es.upm.muss.agile.Constants;
+import es.upm.muss.agile.dao.IdeaDao;
+import es.upm.muss.agile.model.Idea;
 import es.upm.muss.agile.model.Role;
 import es.upm.muss.agile.model.User;
+import es.upm.muss.agile.service.IdeaManager;
 import es.upm.muss.agile.service.RoleManager;
 import es.upm.muss.agile.service.UserExistsException;
 import es.upm.muss.agile.util.ConvertUtil;
 import es.upm.muss.agile.webapp.util.RequestUtil;
+
 import org.springframework.mail.MailException;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.AuthenticationTrustResolver;
@@ -17,6 +21,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
@@ -30,7 +35,9 @@ import java.util.Map;
 public class IdeaForm extends BasePage implements Serializable {
     private static final long serialVersionUID = -1141119853856863204L;
     private RoleManager roleManager;
-    private String id;
+    private IdeaManager ideaManager;
+    
+    String id;
     private String title;
     private String description;
     
@@ -40,9 +47,21 @@ public class IdeaForm extends BasePage implements Serializable {
     private String[] userRoles;
 
     
+    public void setIdeaManager(IdeaManager ideaManager) {
+        this.ideaManager = ideaManager;
+    }
+
+    
+    
     public void save(){
+    	Idea idea = new Idea();
+    	idea.setTitle("Primera Idea");
+    	idea.setDescription("Descripcion de primera idea");
+    	idea.setCategory(new Long(1));
+    	ideaManager.save(idea);
+    	
     	System.out.println("grabando");
-    	log.error("GRABANDO!!!");
+    	
     }
     
     
