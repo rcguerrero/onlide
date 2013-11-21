@@ -5,6 +5,7 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>es.upm.muss.agile.model.User</class>
         <class>es.upm.muss.agile.model.Role</class>
+        <class>es.upm.muss.agile.model.Idea</class>
         
         <!-- 
         Adding more <class>f.q.c.Name</class> elements here is not required.  

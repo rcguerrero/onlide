@@ -8,5 +8,6 @@
     <session-factory>
         <mapping class="es.upm.muss.agile.model.User"/>
         <mapping class="es.upm.muss.agile.model.Role"/>
+        <mapping class="es.upm.muss.agile.model.Idea"/>
     </session-factory>
 </hibernate-configuration>
